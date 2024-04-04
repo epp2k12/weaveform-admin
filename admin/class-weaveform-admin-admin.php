@@ -80,7 +80,7 @@ class Weaveform_Admin_Admin
 
 		if (strpos($src_string, $search_string) !== false) {
 
-			wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/weaveform-admin-admin.css', array(), $this->version, 'all');
+			wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/weaveform-admin-admin.scss', array(), $this->version, 'all');
 		}
 	}
 

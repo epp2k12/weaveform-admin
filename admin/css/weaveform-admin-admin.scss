@@ -1,0 +1,21 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ $myColor: orange;
+ $myFontSize: 2em;
+
+.weaveform-header {
+
+    font-size: $myFontSize;
+    background-color: white;
+    border:1px solid  $myColor;
+    margin: 5px 0 5px 0;
+    
+
+    h1 {
+        color: $myColor !important;
+        text-align: center;
+    }
+    
+}
