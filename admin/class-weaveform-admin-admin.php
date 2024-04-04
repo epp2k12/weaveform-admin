@@ -81,6 +81,9 @@ class Weaveform_Admin_Admin
 		if (strpos($src_string, $search_string) !== false) {
 
 			wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/weaveform-admin-admin.scss', array(), $this->version, 'all');
+			wp_enqueue_style($this->plugin_name.'-datatables', plugin_dir_url(__FILE__) . './css/datatables.min.css', array(), $this->version, 'all');
+
+
 		}
 	}
 
@@ -111,7 +114,6 @@ class Weaveform_Admin_Admin
 		$search_string = "weaveform";
 
 		if (strpos($src_string, $search_string) !== false) {
-
 			wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . '../dist/admin.bundle.js', array('jquery'), $this->version, false);
 		}
 	}
