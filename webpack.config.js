@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
     mode: "development",
     entry: {
-        admin: ['./admin/js/weaveform-admin-admin.js', './admin/css/weaveform-admin-admin.css'],
+        admin: ['./admin/js/weaveform-admin-admin.js', './admin/css/weaveform-admin-admin.scss'],
         public: ['./public/js/weaveform-admin-public.js', './public/css/weaveform-admin-public.css']
     },
     output: {
@@ -13,6 +13,14 @@ module.exports = {
     watch: true,
     module: {
         rules: [
+            {
+                test: /\.scss$/, // Apply this rule to files ending in .scss
+                use: [
+                    'style-loader', // Inject CSS into the DOM
+                    'css-loader', // Interpret CSS with imports and url() like import/require() and will resolve them
+                    'sass-loader' // Compile Sass/SCSS to CSS
+                ]
+            },
             {
                 test: /\.css$/, // Apply this rule to files ending in .css
                 use: [

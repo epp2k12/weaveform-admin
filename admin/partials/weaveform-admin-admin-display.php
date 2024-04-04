@@ -14,19 +14,22 @@
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
-<h1 class="weaveform-header">Inside the great Partials !</h1>
+<div class="weaveform-header">
+    <h1>Inside the great Partials !</h1>
+</div>
+
 <table id="myTable" class="display">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Extn.</th>
-                <th>Start date</th>
-                <th>Salary</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Data will be dynamically inserted here -->
-        </tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Extn.</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Data will be dynamically inserted here -->
+    </tbody>
 </table>
