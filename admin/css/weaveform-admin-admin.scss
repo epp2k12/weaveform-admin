@@ -19,3 +19,13 @@
     }
     
 }
+
+.templates-table-container {
+    background-color: white !important;
+    border: 1px solid $myColor;
+    padding:5px;
+}
+
+.templates-table-container .dt-input {
+    width: 50% !important;
+}
